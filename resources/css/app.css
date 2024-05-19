@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    input, select {
+        @apply w-full px-2 py-1 rounded-md border border-slate-400;
+    }
+
+    button {
+        @apply px-8 py-2 rounded-md border bg-blue-700 text-white;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        @apply px-8 py-2 rounded-md border bg-blue-800 text-white;
+    }
+
+    table {
+        @apply w-full border-collapse;
+    }
+
+    table th, table td {
+        @apply text-start p-2;
+        border: 1px solid #DDDDDD;
+    }
+
+    table tr:nth-child(even) {
+        @apply bg-slate-100;
+    }
+}
